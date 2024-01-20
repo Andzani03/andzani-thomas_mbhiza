@@ -1,0 +1,458 @@
+<!-- Add the following code to the existing HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mpho and Mulisa Salon</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  align-items: normal;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hairstyles{
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+}
+
+.hairstyles 
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  background-color: #eee;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/* Add the following styles for the About Us section */
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.team-member {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+
+/* Add some styles for a decorative separator */
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin: 40px 0;
+}
+
+/* Additional styles for the About Us page */
+.about-vision {
+  font-weight: bold;
+}
+
+.about-mission {
+  font-style: italic;
+}
+
+/* Media query to make the team member images stack on smaller screens */
+@media (max-width: 768px) {
+  .about-team {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    flex: 0 0 45%;
+  }
+}
+/* Add the following styles for the Services section */
+.services-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service-item {
+  max-width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+/* Add the following styles for the Gallery section */
+.gallery-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery-image {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.gallery-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* Add the following styles for the form and container */
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f5f5;
+}
+
+.form-container {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+margin: 20px;
+width: 300px;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+}
+
+.form h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.form input {
+margin: 5px 0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form button {
+background-color: #333;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* Add the following styles for the icon container and icons */
+.icons-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f5f5;
+}
+
+.home-icon,
+.signin-icon {
+font-size: 40px;
+color: #333;
+margin: 20px;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.home-icon:hover,
+.signin-icon:hover {
+color: #007bff;
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust image size as needed */
+gap: 10px; /* Adjust gap between images */
+max-width: 1200px;
+padding: 20px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+
+.styled-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.styled-list li {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+padding: 10px 20px;
+margin: 10px;
+transition: background-color 0.3s, transform 0.2s;
+cursor: pointer;
+}
+
+.styled-list li:hover {
+background-color: #f0f0f0;
+transform: translateY(-3px);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="Home.html">HOME</a>
+      <a href="about.html">ABOUT Us</a>
+      <a href="services.html">SERVICES</a>
+      <a href="galary.html">GALLERY</a>
+      <a href="login.html">SIGN IN</a>
+      
+  </header>
+<section id="services" class="services-section">
+  <h2>Our Services</h2>
+  <div class="services-list">
+    <div class="service-item">
+      <h3>Haircut & Styling</h3>
+      <p>Professional haircuts and styling for all hair types.</p>
+      <ul class="styled-list">
+        <li>Short Pixie Cut</li>
+        <li>Long Layered Cut</li>
+        <li>Bob Cut</li>
+        <li>Crew Cut</li>
+        <li>Undercut</li>
+        <li>Fade</li>
+        <li>Pompadour</li>
+        <li>French Crop</li>
+        <li>Buzz Cut</li>
+        <li>Mohawk</li>
+        <!-- Add more hair cut names here -->
+      </ul>
+    </div>
+    <div class="service-item">
+      <h3>Hair Coloring</h3>
+      <p>Expert hair coloring and highlighting services.</p>
+      <ul class="styled-list">
+        <li>Blonde</li>
+        <li>Brunette</li>
+        <li>Black</li>
+        <li>Red</li>
+        <li>Highlights</li>
+        <li>Lowlights</li>
+        <li>Ombre</li>
+        <li>Balayage</li>
+        <li>Pastel</li>
+        <li>Rainbow</li>
+      </ul>
+    </div>
+    <div class="service-item">
+      <h3>Makeup</h3>
+      <p>Get the perfect makeup look for any occasion.</p>
+      <ul class="styled-list">
+        <li>Braids</li>
+        <li>Buns</li>
+        <li>Ponytail</li>
+        <li>Updo</li>
+        <li>Half-Up Half-Down</li>
+        <li>Twists</li>
+        <li>Bobby Pins</li>
+        <li>Hair Accessories</li>
+        <li>Extensions</li>
+        <li>Hair Glitter</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery-section">
+  <h2>BRAIDS</h2>
+  <div class="gallery-images">
+    <div class="gallery-image">
+      <img src="ath-jumbo-box-braids-500x500.png" alt="Gallery Image 1">
+    </div>
+    <div class="gallery-image">
+      <img src="13dd745acce0016d3364f317b6920c91.jpg" alt="Gallery Image 2">
+    </div>
+    <div class="gallery-image">
+      <img src="Ek5peFdXEAAF3zP.jpg" alt="Gallery Image 3">
+    </div>
+    <div class="gallery-image">
+      <img src="Fancy_design_braided_style_2022.png" alt="Gallery Image 4">
+    </div>
+    <div class="gallery-image">
+      <img src="Very_thin_Carrot_line_2022.png" alt="Gallery Image 5">
+    </div>
+  </div>
+
+  <h2>HAIR CUT</h2>
+  <div class="image-grid">
+    <div class="">
+      <img src="toastiestyles-buzz-fade-line-up-for-black-hair-819x1024.jpg"  alt="1. Buzz Cut + Fade + Line Up">
+    </div>
+    <div class="">
+      <img src="ricanbarber_-short-haircuts-for-black-boys-half-moon-part-1024x1024.jpg"  alt="2. Half Moon Part + High Fade">
+    </div>
+    <div class="">
+      <img src="eddied_up-buzz-cut-for-black-boys-temple-fade-south-for-france-1-1024x730.jpg"  alt="3. Burst Fade Haircut">
+    </div>
+    <div class="">
+      <img src="freshlyfadedbarber-wide-mohawk-haircuts-for-black-boys-e1504717769206-768x581.jpg"  alt="4. Burst Fade Mohawk">
+    </div>
+    <div class="">
+      <img src="kadekut88-cool-hairstyle-for-black-men-and-boys-2017.jpg"  alt="5. Buzz Cut + Fade">
+    </div>
+    <div class="">
+      <img src="o_2smooth-short-curly-haircuts-for-black-boys-1024x1024.jpg"  alt="6. Neck Taper + Edge Up + Side Burns">
+    </div>
+  </div>
+</section>
+<footer>
+
+  
+
+  <p>&copy; 2023 Mpho and Mulisa Salon. All rights reserved.</p>
+</footer>
+</body>
+</html>

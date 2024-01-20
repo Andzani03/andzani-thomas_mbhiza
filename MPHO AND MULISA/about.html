@@ -1,0 +1,466 @@
+<!-- Add the following code to the existing HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mpho and Mulisa Salon</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  align-items: normal;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hairstyles{
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+}
+
+.hairstyles 
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  background-color: #eee;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/* Add the following styles for the About Us section */
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.team-member {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+
+/* Add some styles for a decorative separator */
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin: 40px 0;
+}
+
+/* Additional styles for the About Us page */
+.about-vision {
+  font-weight: bold;
+}
+
+.about-mission {
+  font-style: italic;
+}
+
+/* Media query to make the team member images stack on smaller screens */
+@media (max-width: 768px) {
+  .about-team {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    flex: 0 0 45%;
+  }
+}
+/* Add the following styles for the Services section */
+.services-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service-item {
+  max-width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+/* Add the following styles for the Gallery section */
+.gallery-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery-image {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.gallery-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* Add the following styles for the form and container */
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f5f5;
+}
+
+.form-container {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+margin: 20px;
+width: 300px;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+}
+
+.form h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.form input {
+margin: 5px 0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form button {
+background-color: #333;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* Add the following styles for the icon container and icons */
+.icons-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f5f5;
+}
+
+.home-icon,
+.signin-icon {
+font-size: 40px;
+color: #333;
+margin: 20px;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.home-icon:hover,
+.signin-icon:hover {
+color: #007bff;
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust image size as needed */
+gap: 10px; /* Adjust gap between images */
+max-width: 1200px;
+padding: 20px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+
+.styled-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.styled-list li {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+padding: 10px 20px;
+margin: 10px;
+transition: background-color 0.3s, transform 0.2s;
+cursor: pointer;
+}
+
+.styled-list li:hover {
+background-color: #f0f0f0;
+transform: translateY(-3px);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="Home.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="services.html">SERVICES</a>
+      <a href="galary.html">GALLERY</a>
+      <a href="login.html">SIGN IN</a>
+  </header>
+<section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      Mpho and Mulisa Salon is a place where beauty and style come together. 
+      Our talented team of stylists is dedicated to making you look and feel your best.
+      The customer is very important, the customer will be followed by the customer.
+      There is no such thing as stayGlam or any turpism, let it be a lot of basketball.
+<br><br>
+    <h1>1.  Crafting Beauty Beyond Trends:</h1>
+At Mpho and Mulisa Salon, we're not just hairstylists; we're artisans of beauty. With a keen eye for detail and a heart devoted to enhancing your charm, we craft styles that transcend trends and empower you to embrace your individuality.
+<br><br>
+<h1>2. Artistry Meets Expertise:</h1>
+Our story is one of passion and precision. With a team of skilled artists and beauty experts, we create hairstyles that are more than just looks; they're works of art. Step into our world, where artistry meets expertise and beauty is celebrated in every form.
+<br><br>
+<h1>3. A Journey of Transformation:</h1>
+Mpho and Mulisa Salon is more than a destination; it's a journey of transformation. From the moment you walk in, we're committed to understanding your desires, uncovering your unique beauty, and guiding you through a metamorphosis that leaves you feeling renewed and radiant.
+<br><br>
+<h1>4. Our Commitment to You:</h1>
+Our salon was founded on the principle of putting you first. With attentive care and tailored services, we're dedicated to ensuring that every visit is an experience that pampers your senses, enhances your confidence, and leaves you looking and feeling your best.
+<br><br>
+<h1>5. Beauty with a Personal Touch:</h1>
+Beauty is personal, and at Mpho and Mulisa Salon, so is our approach. With a warm and welcoming atmosphere, we're here to listen, understand, and collaborate, ensuring that each style we create reflects your personality and aspirations.
+<br><br>
+<h1>6. Embrace Your Unique Beauty:</h1>
+Our philosophy centers on celebrating your uniqueness. We believe that every individual possesses a distinctive beauty that deserves to shine. Our mission is to enhance, not transform, ensuring you leave our salon with a look that's unmistakably you.
+<br><br>
+<h1>7. Experience the Art of Beauty:</h1>
+Welcome to a realm where beauty is more than skin deep; it's an art form. Our salon is a canvas where creativity flourishes, and your hair becomes a masterpiece. Come experience the art of beauty and let us elevate your style to new heights.
+<br><br>
+<h1>8. Community, Creativity, Care:</h1>
+Mpho and Mulisa Salon is built on the pillars of community, creativity, and care. Beyond styling hair, we cultivate connections, foster creativity, and provide a haven where you can relax, refresh, and relish in the transformational power of beauty.
+    </p>
+    
+    <!-- Decorative separator -->
+    <div class="separator"></div>
+  
+    <h3 class="about-vision">Our Vision</h3>
+    <p>
+      <h6>A Vision of Timeless Elegance:</h6><br>
+Our vision is to be the epitome of timeless elegance, where every visit is an experience of luxury and refinement. We aspire to set trends, create beauty that stands the test of time, and become a symbol of grace and sophistication.
+<br><br>
+<h6>Fostering Beauty and Confidence:<br></h6>
+Our vision is to be a catalyst for beauty and confidence. We're dedicated to creating an environment where our clients not only leave looking stunning but feeling self-assured, empowered, and ready to conquer the world.
+<br><br>
+<h6>Pioneering Beauty Innovation:</h6><br>
+At Mpho and Mulisa Salon, our vision is to lead with innovation. We're committed to staying at the forefront of beauty trends and techniques, continually pushing boundaries and redefining industry standards.
+<br><br>
+<h6>A Sanctuary of Self-Care:</h6><br>
+Our vision is to provide more than beauty services; we want to be a sanctuary of self-care. We envision a space where clients can unwind, rejuvenate, and rediscover their inner glow, leaving our doors feeling renewed and inspired.
+<br><br>
+<h6>Celebrating Diversity and Inclusivity:</h6><br>
+We envision a salon that celebrates diversity and inclusivity in all aspects. Our goal is to be a destination where people of every background feel welcome, embraced, and valued, leaving with a sense of unity and belonging.
+<br><br>
+<h6>Creating Lasting Memories:</h6><br>
+Our vision is to create not just beauty, but memories that last a lifetime. We aspire to be a part of your special moments, whether it's a big event or an everyday transformation, ensuring that you always remember the magic we weave.
+<br><br>
+<h6>A Destination for Beauty and Wellness:</h6><br>
+Our vision is to be a holistic destination for beauty and wellness. We aim to integrate relaxation, pampering, and rejuvenation into every service, offering an oasis where clients can nurture their body, mind, and spirit.
+<br><br>
+<h6>Inner Radiance:</h6> <br>
+Our vision is to be the mirror that unveils your inner radiance. We strive to enhance your natural beauty, providing you with a canvas upon which your true self shines through, radiating confidence and authenticity.
+    </p><br><br><br>
+  
+    <h3 class="about-mission">Our Mission</h3>
+    <p>
+      Elevating Beauty, Elevating You:<br>
+Our mission is to create a haven where beauty is celebrated in all its forms. We're dedicated to crafting personalized styles that enhance your unique charm and help you embrace your confidence.<br><br>
+
+Crafting Beauty, Inspiring Confidence:<br>
+At Mpho and Mulisa Salon, our purpose is to weave the art of beauty into every service we offer.<br> Through skillful expertise and genuine care, we empower you to walk taller, radiate confidence, and cherish your authentic self.<br><br>
+
+Where Beauty Meets Elegance:<br>
+Our mission is to seamlessly merge beauty and elegance.<br> With skilled hands and passionate hearts, we curate exquisite styles that reflect your individuality,<br> making every moment you spend with us a masterpiece of beauty and sophistication.<br><br>
+
+Empowering Through Transformation:<br>
+At our salon, we're on a mission to empower you through transformative beauty experiences.<br> Our skilled team is committed to revealing your inner radiance, leaving you feeling empowered and ready to conquer the world.<br><br>
+
+Creating Beauty, Building Relationships:<br>
+Our salon's mission is twofold: to create stunning styles that mirror your desires and to foster meaningful relationships. We believe that beauty is both an art and a bond, and we're here to make every interaction unforgettable.
+<br><br>
+Unveiling Your Best Self:<br>
+Our mission revolves around revealing the best version of yourself. We take pride in our ability to bring out your natural beauty, ensuring you step out with a radiant glow and a confident smile.
+<br><br>
+Beauty Beyond Boundaries:<br>
+We're committed to breaking down beauty boundaries. Our mission is to embrace diversity, enhance your unique features, and celebrate beauty in all its shades, shapes, and styles.
+<br><br>
+Crafting Styles, Crafting Connections:<br>
+Beyond crafting styles, our mission is to craft connections.<br> We're passionate about building a community where clients become friends and every visit is an opportunity to connect, uplift, and transform.
+
+    </p>
+  
+    <!-- Team Members -->
+    <h2>Our Team</h2>
+    <div class="about-team">
+      <div class="team-member">
+        <img src="IMG_20211016_100614.jpg" alt="Team Member 1">
+        <h3>Stylist Name</h3>
+        <p>Stylist Bio and Expertise</p>
+      </div>
+      <div class="team-member">
+        <img src="IMG-20211120-WA0016.jpeg" alt="Team Member 2">
+        <h3>Stylist Name</h3>
+        <p>Stylist Bio and Expertise</p>
+      </div>
+      <!-- Add more team members as needed -->e
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Mpho and Mulisa Salon. All rights reserved.</p>
+  </footer>
+</body>
+</html>  

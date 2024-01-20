@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mpho and Mulisa Salon - Login</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  align-items: normal;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hairstyles{
+  background-position: center;
+  background-size: cover;
+  color: wheat;
+}
+
+.hairstyles 
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  background-color: #eee;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+/* Add the following styles for the About Us section */
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.team-member {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+
+/* Add some styles for a decorative separator */
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin: 40px 0;
+}
+
+/* Additional styles for the About Us page */
+.about-vision {
+  font-weight: bold;
+}
+
+.about-mission {
+  font-style: italic;
+}
+
+/* Media query to make the team member images stack on smaller screens */
+@media (max-width: 768px) {
+  .about-team {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    flex: 0 0 45%;
+  }
+}
+/* Add the following styles for the Services section */
+.services-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service-item {
+  max-width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+/* Add the following styles for the Gallery section */
+.gallery-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery-image {
+  max-width: 300px;
+  margin: 10px;
+}
+
+.gallery-image img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+/* Add the following styles for the form and container */
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f5f5;
+}
+
+.form-container {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+margin: 20px;
+width: 300px;
+}
+
+.form {
+display: flex;
+flex-direction: column;
+}
+
+.form h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.form input {
+margin: 5px 0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form button {
+background-color: #333;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+/* Add the following styles for the icon container and icons */
+.icons-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f5f5f5;
+}
+
+.home-icon,
+.signin-icon {
+font-size: 40px;
+color: #333;
+margin: 20px;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.home-icon:hover,
+.signin-icon:hover {
+color: #007bff;
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust image size as needed */
+gap: 10px; /* Adjust gap between images */
+max-width: 1200px;
+padding: 20px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+
+.styled-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.styled-list li {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+padding: 10px 20px;
+margin: 10px;
+transition: background-color 0.3s, transform 0.2s;
+cursor: pointer;
+}
+
+.styled-list li:hover {
+background-color: #f0f0f0;
+transform: translateY(-3px);
+}
+  </style>
+  <header>
+    <nav>
+      <a href="Home.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="services.html">SERVICES</a>
+      <a href="galary.html">GALLERY</a>
+      <a href="login.html">SIGN IN</a>
+  </header>
+</head>
+<div class="form-container">
+    <form id="signup-form" class="form">
+      <h2>Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="tel" id="signup-phone" placeholder="Phone Number" required>
+      <input type="text" id="signup-firstname" placeholder="First Name" required>
+      <input type="text" id="signup-lastname" placeholder="Last Name" required>
+      <input type="text" id="signup-username" placeholder="Username" required>
+      <input type="password" id="signup-password" placeholder="Create Password" required>
+      <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+      <a href="login.html">alread have account? LOGIN</a>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+    
+<script src="script.js"></script>
+</body>
+</html>
